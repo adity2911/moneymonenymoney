@@ -1,0 +1,62 @@
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.chart-title {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.filter-dropdown {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.filter-dropdown:hover {
+  border-color: #888;
+}
+
+.recharts-tooltip-wrapper {
+  border-radius: 5px;
+}
+
+.recharts-bar-rectangle {
+  rx: 5px;
+}
+
+.recharts-legend-wrapper {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.recharts-cartesian-axis-tick {
+  font-size: 0.8rem;
+  fill: #666;
+}

@@ -1,0 +1,70 @@
+.dashboard-container1 {
+  margin: 20px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.dashboard-container1:hover {
+  transform: translateY(-3px);
+}
+
+.balance-card {
+  padding: 50px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+}
+
+.balance-row:last-child {
+  border-bottom: none;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.income {
+  color: #008000;
+}
+
+.expense {
+  color: #d32f2f;
+}
+
+.money-in,
+.money-out {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .balance-card {
+    padding: 15px;
+  }
+
+  .balance-row {
+    font-size: 15px;
+  }
+
+  .amount {
+    font-size: 15px;
+  }
+}
