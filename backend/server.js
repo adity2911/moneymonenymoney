@@ -22,8 +22,8 @@ app.use(
 );
 
 // Routes
-app.use("/auth", authRoutes); // ✅ Authentication Routes
-app.use("/transactions", transactionRoutes); // ✅ Transaction Routes
+app.use("/auth", authRoutes); // Authentication Routes
+app.use("/transactions", transactionRoutes); // Transaction Routes
 
 // Connect to MongoDB
 mongoose

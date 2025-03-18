@@ -2,15 +2,40 @@ import React from "react";
 import "../styles/dashboard.css";
 
 const Dashboard = ({ transactions }) => {
-  const income = transactions
+  const currentMonth = new Date().getMonth() + 1;
+
+  // Filter past transactions (before current month)
+  const pastTransactions = transactions.filter((t) => {
+    const transactionDate = new Date(t.date);
+    return transactionDate.getMonth() + 1 < currentMonth;
+  });
+
+  // Calculate Opening Balance (Total Income - Total Expenses until last month)
+  const pastIncome = pastTransactions
     .filter((t) => t.type === "income")
     .reduce((acc, t) => acc + t.amount, 0);
 
-  const expenses = transactions
+  const pastExpenses = pastTransactions
     .filter((t) => t.type === "expense")
     .reduce((acc, t) => acc + t.amount, 0);
 
-  const openingBalance = 128;
+  const openingBalance = pastIncome - pastExpenses;
+
+  // Calculate current month's Money In & Money Out
+  const currentMonthTransactions = transactions.filter((t) => {
+    const transactionDate = new Date(t.date);
+    return transactionDate.getMonth() + 1 === currentMonth;
+  });
+
+  const income = currentMonthTransactions
+    .filter((t) => t.type === "income")
+    .reduce((acc, t) => acc + t.amount, 0);
+
+  const expenses = currentMonthTransactions
+    .filter((t) => t.type === "expense")
+    .reduce((acc, t) => acc + t.amount, 0);
+
+  // Calculate Closing Balance
   const closingBalance = openingBalance + income - expenses;
 
   return (
