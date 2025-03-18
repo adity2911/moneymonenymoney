@@ -100,3 +100,9 @@ npm run start
 - **Recurring transactions** feature
 - **Data export/import** functionality
 - **AI-powered budgeting insights**
+
+ScreenShots:
+![Login Page](image.png)
+![Sign-up Page](image-1.png)
+![Budget Page 1](image-2.png)
+![Budget Page 2](image-3.png)
