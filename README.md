@@ -40,7 +40,6 @@ The **Budgeting App** is a simple and intuitive financial tracking tool that all
 /frontend
   ├── src/
       ├── components/ # React UI components
-      ├── pages/      # Different screens (Login, Dashboard, etc.)
       ├── App.js      # Root React component
       ├── index.js    # Entry point
 ```
