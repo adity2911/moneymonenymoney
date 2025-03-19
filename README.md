@@ -101,4 +101,4 @@ npm run start
 - **Data export/import** functionality
 - **AI-powered budgeting insights**
 
-![alt text](frontend/image-1.png) ![alt text](frontend/image-2.png) ![alt text](frontend/image-3.png) ![alt text](frontend/image.png)
+![LOGIN page](image-1.png) ![Signup Page](image-2.png) ![Budget Tracekr1](image-3.png) ![Budget Tracekr2](image.png)
